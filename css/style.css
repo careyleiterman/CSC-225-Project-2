@@ -1,0 +1,251 @@
+/* Body is given a nice gradient to match comic books */
+body {
+    height: 100%;
+    background: linear-gradient(45deg, red 45%,yellow 50%, red 55%);
+    background-repeat: no-repeat;
+}
+
+/* The CCComics icon */
+.icon {
+    font-size: x-large;
+    position: absolute;
+    left: 40px;
+    top: 25px;
+}
+
+.text {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+}
+/* The main banner of comic books */
+.jumbotron {
+    background-image:url("../images/comic-banner.jpg");
+    background-size: cover;
+    height: 45vh;
+}
+
+.active a {
+    font-size: large;
+    background-color: red;
+    border-radius:  45%;
+
+}
+.catalog a {
+    color: rgb(206, 206, 72);
+}
+.nav-item a {
+    color: yellow!important;
+}
+
+.flyer-1 {
+    background: blue!important;
+    border: solid black;
+}
+
+.flyer-2 {
+    background: white!important;
+    border: solid black;
+}
+
+.ad-font {
+    font-family: comic-sans, cursive, sans-serif;
+}
+.contact-info a {
+    color: black!important;
+}
+
+.flyer-3 a {
+    color: blue!important;
+}
+.flyer-3 {
+    background: none!important;
+    border: none;
+    color: rgb(10, 10, 1);
+}
+
+
+.link2 span {
+    border: solid rgb(238, 243, 248);
+    color: yellow!important;
+}
+.link2 span:hover {
+    color: yellow!important;
+    background: blue!important;
+    border-style: hidden;
+}
+
+.navbar a:hover {
+    color: rgb(76, 0, 255)!important;
+    background: none!important;
+    border-radius: 5%;
+}
+
+.link1:hover {
+    color: blue;
+}
+
+.link1 {
+    color: red;
+}
+
+/* a text style for my banner and other areas.  Color overridden in areas */
+.cool-text {
+    font-family: 'Shadows Into Light', cursive, sans-serif;
+    color: yellow;
+}
+
+
+/* to make some fonts larger */
+.large {
+    font-size: large;
+}
+
+/* centers the community area */
+.center-margins {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* a little formatting for the cosplay images */
+.cosplay-images {
+    border:solid;
+    border-left-style: ridge ;
+    border-width: .15em;
+    border-color: rgba(36, 36, 230, 0.527);
+    border-radius: 65%;
+    width:auto;
+    height:15%;
+    
+}
+
+/* used to format the memberships box */
+.membership {
+    padding-top: 10px;
+    
+}
+
+/* gets rid of the bullets */
+ul {
+    list-style-type: circle;
+}
+
+.carousel-caption {
+    bottom: 0;
+    left:0%;
+    right:0%;
+    background-color: red;
+}
+
+.carousel {
+    margin-top: 40px;
+    margin-right: 0px!important;
+    width: 480px;
+    height: 300px;
+}
+
+@media (max-width:500px)
+{
+    .carousel {
+        height: fit-content;
+    }
+}
+.slide  {
+    background-color: red;
+}
+.carousel-caption h5 {
+    text-transform: uppercase;
+}
+
+.sale-ad {
+    width: 75%;
+    border-radius: 25px;
+}
+
+.collectible-link::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -200px; 
+    height: 200px; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
+
+
+  .weekly-link::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -200px; 
+    height: 200px; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
+
+  .comics-link::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -200px; 
+    height: 200px; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
+
+  form {
+    color: black;
+    font-weight: bold;  
+  }
+
+  .form-text a{
+    color:yellow;
+  }
+  .cart-image {
+      position: absolute;
+      right: 200px;
+      height: 28px;
+  }
+  
+  .welcome-text {
+      position: absolute;
+      right: 245px;
+      color: yellow;
+  }
+
+  /* Up to a max of 767px will not display */
+@media (max-width: 767px) {
+    .main-banner-title {
+        display:none;
+    }
+}
+/* From 768px and up the secondary words will not display */
+@media (min-width: 768px) {
+    .main-title-2 {
+        display:none;
+    }
+}
+
+@media (max-width:500px) {
+    .add-font h2 {
+        font-size: x-small;
+        background-size: contain;
+    }
+}
+
+@media (min-width:992px)
+{
+    .class-banner {
+        background: linear-gradient(0deg,red 1%,yellow 50%, red 55%);
+        background-color: red;
+    }
+        
+}
+
+@media (max-width: 991px)
+{
+    .class-banner {
+    background-color: red;
+    }
+}

@@ -1,0 +1,33 @@
+/* Body is given a nice gradient to match comic books */
+body {
+    height: 100%;
+    background: rgb(236, 166, 73)!important;
+    background-repeat: no-repeat;
+    font-style: san-serif;
+}
+
+.about-us {
+    text-indent: 2em;
+    text-align: justify;
+    font-size: larger;
+}
+
+hr {
+    background-color: yellow;
+    height: 1px;
+}
+
+
+.contact-link a {
+    color: blue;
+}
+
+dd {
+    text-indent: 3em;
+}
+
+.corona-banner {
+    background: rgb(255, 50, 50);
+    border-radius: 20px;
+    color: rgb(255, 255, 0);
+}

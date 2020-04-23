@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&family=Shadows+Into+Light&display=swap" rel="stylesheet">        
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Shopping Bag</title>
+</head>
+<body>
+  <h1 class="main-title-2 display-5 mb-md-0 cool-text text-dark text-center font-weight-bold m-0">Carey's Comics & Collectibles</h1>
+  <div class="container-fluid sticky-top class-banner">
+      <header>
+        <div class="main-banner-title">
+          <h1 class="display-4 pt-2 px-2 pb-5 mb-5 mb-md-0 cool-text text-center font-weight-bold m-0">Carey's Comics & Collectibles</h1>
+        </div>
+      
+        <!-- Fixed for all sizes above this line -->
+        <!-- Bootstrap NavBar -->
+        <div class="container-fluid position-relative px-0">
+          <nav class="navbar navbar-expand-lg navbar-light  mx-1">
+            <a class="text-primary mr-2 cool-text bg-white rounded-circle p-3 navbar-brand" href="about-us.html">CCComics</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="large mr-1 nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="large mr-1 nav-link" href="catalog.html#collectibles">Collectibles</a>
+                </li>
+                <li class="nav-item">
+                  <a class="large mr-1 nav-link" href="catalog.html">Comics </a>
+                </li>
+                <li class="nav-item">
+                  <a class="large mr-1 nav-link" href="community.html">Community</a>
+                </li>
+                <li class="nav-item">
+                  <a class="large mr-1 nav-link" href="membership.html">Memberships</a>
+                </li>
+              </ul>
+              <a href="cart.html" class="link2"><span class="large rounded navbar-text nav-link">Shopping Bag</span></a>
+            </div>
+          </nav>
+        </div>
+        </header>
+  </div>
+
+    <div class="container main-items pb-5">
+      <h3 class="text-center pt-3">ZzFlashzZ's Shopping Bag</h3>
+      <hr>
+      <div class="row">
+          <div class="col col-sm-3 col-md-2">
+              <img src="images/collectible3.jpg" alt="Harley Sculpture">
+          </div>
+          <div class="col col-6 col-sm-3">
+              <p>Harley Quinn 8 inch wide by 12 inch height carved figure with stand</p>
+              <form action="#" method="get">
+                <select id="quantity1" name="quantity">
+                  <option value="0">Delete</option>
+                  <option value="1" selected="selected">Qty: 1</option>
+                  <option value="2">Qty: 2</option>
+                  <option value="3">Qty: 3</option>
+                  <option value="4">Qty: 4</option>
+                  <option value="5">Qty: 5</option>              
+                </select>
+              </form>
+               <a href="#" class="card-info btn btn-primary mt-2">Delete</a>
+        </div>
+
+        <div class="text-right price col col-3">
+          <b>$89.99</b>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col col-sm-3 col-md-2">
+          <img src="images/collectible1.jpg" alt="Harley Shot Glass">
+        </div>
+        <div class="col-6 col-sm-3">
+          <p>Harley Quinn Shot Glass</p>
+          <form action="#" method="get">
+            <select id="quantity2" name="quantity">
+              <option value="0">Delete</option>
+              <option value="1">Qty: 1</option>
+              <option value="2" selected="selected">Qty: 2</option>
+              <option value="3">Qty: 3</option>
+              <option value="4">Qty: 4</option>
+              <option value="5">Qty: 5</option>              
+            </select>
+          </form>
+          <a href="#" class="card-info btn btn-primary mt-2">Delete</a>
+        </div>
+        <div class="price text-right col col-3">
+          <b>$9.98</b>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col col-sm-3 col-md-2">
+          <img src="images/stargold.jpg" alt="Gold Star">
+        </div>
+        <div class="col-6 col-sm-3">
+          <p>Gold Membership</p>
+          <form action="#" method="post">
+            <select id="quantity3" name="quantity">
+              <option value="0">Delete</option>
+              <option value="1" selected="selected">Qty: 1</option>
+              <option value="2">Qty: 2</option>
+              <option value="3">Qty: 3</option>
+              <option value="4">Qty: 4</option>
+              <option value="5">Qty: 5</option>              
+            </select>
+          </form>
+          <a href="#" class="card-info btn btn-primary mt-2">Delete</a>
+        </div>
+        <div class="text-right price col col-3">
+          <b>$149.99</b>
+        </div>
+      </div>
+      <hr>
+      <div class="row final-row">
+        <div class="col col-sm-3 col-md-2">
+          <img src="images/shopping-bag.jpg" alt="Gold Star">
+
+          
+        </div>
+        <div class="col-6 col-sm-3">    
+          <p>Total sum of all items</p>
+          <p>4 Items in your bag</p>
+          <a href="#" class="card-info btn btn-primary mt-2">Delete Bag</a>
+        </div>
+        <div class="col col-3 text-right">
+          <p><span class="price"><b>$249.96</b></span></p>
+          <a href="checkout.html" class="check-out p-1 rounded">Checkout</a>     
+
+        </div>
+      </div>        
+
+     
+    </div>
+    <div class="container-fluid pt-5">
+      <footer>
+        <hr class="footer-line">
+        <div class="row d-flex">
+          <div class="col-sm-5 contact-info">
+            <p class="text-center"><a href="about-us.html#contact-us">Contact Us</a></p>
+          </div>
+          <div class="col">
+            <p class="text-left">Serving lovers of the imagination since 2020 CCComics <i class="fa fa-copyright"></i></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+</body>
+</html>

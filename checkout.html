@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <title>Checkout Page</title>
+</head>
+  <body>
+       <header class="container-fluid mb-3">
+         <div class="container">
+          <div class="row">
+            <div class="col">
+              <h3 class="pt-3 pb-1 cool-text text-dark">CCComics</h3>
+            </div>
+            <div class="col">
+              <h5 class="pt-3 text-dark">Checkout (<a href="cart.html">4 items</a>)</h5>
+            </div>
+          </div>
+        </div>
+       </header>
+
+      <div class="container">
+        <!-- Outer Row -->
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-12 col-lg-7">
+                <!-- Inner Row 1-->
+                <div class="row mx-1 mb-3">
+                    <!-- Inner Col 1-->
+                    <div class="col-12 col-sm-4">
+                        <b>Name:</b>
+                    </div>
+                    <!-- Inner Col 2-->
+                    <div class="col-12 col-sm-8">
+                        Carey Leiterman
+                    </div>
+                    <!-- Inner Col 3-->
+                    <div class="col-12 col-sm-2">
+                    </div>
+                </div>
+
+                <hr>
+                <!-- Inner Row 2 -->
+                <div class="row mx-1 mb-2">
+                    <!-- Inner Col 1 -->
+                    <div class="col-12 col-sm-4">
+                      <b>Shipping Address:</b>
+                    </div>
+                    <!-- Inner Col 2 -->
+                    <div class="col-12 col-sm-8 col-md-6">
+                        <table>
+                            <tr><td>38 Elson Street</td></tr>
+                            <tr><td>Staten Island</td></tr>
+                            <tr><td>New York, 10314</td></tr>  
+                        </table>
+                    </div>
+                    <!-- Inner Col 3 -->
+                    <div class="col-12 col-sm-2">
+                        <a href="#">Edit</a>
+                    </div>
+                </div>
+
+                <hr>
+                <!-- Inner Row 3 -->
+                <div class="row mx-1 mb-2">
+                  <!-- Inner Col 1 -->
+                    <div class="col-12 col-sm-4">
+                        <b>Payment Info:</b>
+                    </div>
+                    <!-- Inner Col 2 -->
+                    <div class="col-12 col-sm-8 col-md-6">
+                        <table>
+                            <tr><td>Method On File</td></tr>
+                            <tr><td>Card Ending: 8664</td></tr>
+                        </table>
+                    </div>
+                    <!-- Inner Col 3 -->
+                    <div class="col-12 col-sm-2">
+                      <a href="#">Edit</a>
+                  </div>
+                </div>
+
+                <hr>
+                <!-- Inner Row 4 -->
+                <div class="row mx-1 mb-2">
+                  <!-- Inner Col 1 -->
+                    <div class="col-12 col-sm-4">
+                        <b>Billing Address</b>
+                    </div>
+                    <!-- Inner Col 2 -->
+                    <div class="col-12 col-sm-8 col-md-6">
+                        <table>
+                            <tr><td>38 Elson Street</td></tr>
+                            <tr><td>Staten Island</td></tr>
+                            <tr><td>New York, 10314</td></tr>  
+                        </table>
+                    </div>
+                    <!-- Inner Col 3 -->
+                    <div class="col-12 col-sm-2">
+                        <a href="#">Edit</a>
+                    </div>
+                </div>
+
+                <!-- This will only simulate a checkbox filling in the fields when checked -->
+                <div>
+                  <form action="filloutform.php">
+                      <input type="checkbox" name="information" value="payment" checked="checked">
+                      Check here to use the above information <b><i>or</i></b> fill out the form below.
+                  </form>
+                </div>
+
+                <hr>
+
+                <!-- Payment Information -->
+                <form id="payment-info" action="uploadform.html" method="get">
+                    <p class="text-center"><b>Please fill out your payment information and click update</b></p>
+                    <p class="text-center">* denotes a required field</p>
+                    <p class="mx-1" ><b>Full Name</b></p>
+                    <div class="row mx-1">
+                        <div class="col-12 col-md-6 col-lg-7">
+                            <label for="firstName"><small>First *</small></label>
+                            <input type="text" name="firsttname" id="firstName" placeholder="ex: John" required>
+                        </div>  
+                        <div class="col-12 col-md-6">
+                            <label for="lastName"><small>Last *</small></label>
+                            <input type="text" name="lasttname" id="lastName" placeholder="ex: Smith" required>
+                        </div>
+                    </div>   
+                           
+                    <hr>
+                    <p><b>Shipping Address</b></p>
+                    <div class="row mx-1">
+                        <div class="col-12 col-md-6 col-xl-5">
+                            <label class="address-label" for="address1"><small>Address 1 *</small></label>
+                            <input type="text" name="address1" id="address1" required size="25">  
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-5">                  
+                            <label class="address-label" for="address2"><small>Address 2</small></label>
+                            <input type="text" name="address2" id="address2" size="25">                  
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-5">
+                            <label for="city"><small>City *</small></label>
+                            <input type="text" name="city" id="city" required size="31"> 
+                        </div> 
+                        <div class="col-7 col-sm-12 col-md-6 col-xl-5">
+                            <label class="state-label" for="state"><small>State *</small></label>
+                            <input type="text" name="state" id="state" required size="20">                            
+                          </div> 
+                          <div class="col-7 col-sm-8 col-lg-2 col-xl-3">                          
+                            <label for="zipcode"><small>Zip *</small></label>
+                            <input type="tel" pattern="[0-9]{5}" name="zipcode" id="zipcode" size="10" required>  
+                        </div>
+                    </div>
+
+                    <hr>
+                    <p><b>Billing Adress</b> (If different than shipping address)</p>
+                    <div class="row mx-1">
+                        <div class="col-12 col-md-6 col-xl-5">
+                            <label class="address-label" for="bill-address1"><small>Address 1 *</small></label>
+                            <input type="text" name="address1" id="bill-address1" required size="25">  
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-5">                  
+                            <label class="address-label" for="bill-address2"><small>Address 2</small></label>
+                            <input type="text" name="address2" id="bill-address2" size="25">                  
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-5">
+                            <label for="bill-city"><small>City *</small></label>
+                            <input type="text" name="city" id="bill-city" required size="31"> 
+                        </div> 
+                        <div class="col-7 col-sm-12 col-md-6 col-xl-5">
+                            <label class="state-label" for="bill-state"><small>State *</small></label>
+                            <input type="text" name="state" id="bill-state" required size="20">                            
+                          </div> 
+                          <div class="col-7 col-sm-8 col-lg-2 col-xl-3">                          
+                            <label for="bill-zipcode"><small>Zip *</small></label>
+                            <input type="tel" pattern="[0-9]{5}" name="zipcode" id="bill-zipcode" size="10" required>  
+                        </div>
+                    </div>
+
+                  <hr>
+                    <p><b>Payment Information</b></p>
+                    <div class="row mx-1">
+                        
+                        <div class="col-12">
+                              <label class="name-label" for="name-on-card"><small>Name *</small></label>
+                              <input type="text" name="name-on-card" id="name-on-card" size="20" pattern="[A-Za-z]+[ ][A-Za-z]+" required="required" placeholder=" ex: John Smith">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-7">
+                            <label class="credit-card-label" for="creditcard"><small>Credit card # *</small></label>
+                            <input type="tel" name="creditcard" id="creditcard" pattern="[0-9]{16}" required size="20" placeholder="xxxx xxxx xxxx xxxx">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-5">
+                            <label class="label-ccv" for="ccv"><small>CCV *</small></label> 
+                            <input type="tel" name="ccv" id="ccv" pattern="[0-9]{3}" required size="5" placeholder="xxx">  
+                        </div>
+                        
+                        <div class="col-12 col-sm-8">
+                            <div class="row pt-2">
+                                <div class="col-12 col-md-6 col-lg-12">                                  
+                                    <label class="month-label" for="month-select"><small>Expiration Month</small></label> 
+                                    <select id="month-select" name="month">
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                        <option>07</option>
+                                        <option>08</option>
+                                        <option>09</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option selected>12</option>
+                                    </select>
+                                   <label class="year-label" for="year-select"><small>Year</small></label>
+                                    <select id="year-select" name="year">
+                                        <option>2020</option>
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                        <option>2023</option>
+                                        <option selected>2024</option>
+                                        <option>2025</option>
+                                        <option>2026</option>
+                                        <option>2027</option>
+                                        <option>2028</option>
+                                        <option>2029</option>
+                                        <option>2030</option>
+                                        <option>2031</option>
+                                    </select>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="pt-2 text-center">
+                        <input type="submit"  value="Validate Payment Info">
+                    </p>
+                        
+                </form>
+                <hr>
+            </div>
+            <!-- Order Summary Right Column -->
+            <div class="col-12 col-lg-5">
+                <b class="text-center">Order Summary</b>
+                
+                <div class="row mx-1">
+                    <div class="col-6 col-sm-7 col-md-6">
+                        Items (4):
+                    </div>
+                    <div class="col-6 col-sm-5 col-md-6 text-right">
+                        $249.96
+                    </div>
+                </div>
+                <div class="row mx-1">
+                    <div class="col-6 col-sm-7">
+                        Gold Discount:
+                    </div>
+                    <div class="col-6 col-sm-5 text-right">
+                        -$74.99
+                    </div>
+                </div>
+                <div class="row mx-1">
+                    <div class="col-6 col-sm-7">
+                        20% New Member:
+                    </div>
+                    <div class="col-6 col-sm-5 text-right">
+                        -$34.99
+                    </div>
+                </div>
+                <div class="row mx-1">
+                  <div class="col-6 col-sm-7">
+                      Sales Tax:
+                  </div>
+                  <div class="col-6 col-sm-5 text-right">
+                      $11.55
+                  </div>
+              </div>
+              <div class="row mx-1">
+                <div class="col-6 col-sm-7">
+                    Shipping: 
+                </div>
+                <div class="col-6 col-sm-5 text-right">
+                    None
+                </div>
+              </div>
+              <hr>
+              <div class="row mx-1">
+                  <div class="col-6 col-sm-7">
+                    Total
+                  </div>
+                  <div class="col-6 col-sm-5 text-right">
+                    $151.53
+                  </div>
+              </div>
+              <form class="mt-2 mb-4 text-center" action="order-receipt.html" method="get">
+                  <input type="submit" value="Process Payment">
+              </form>
+            </div>
+
+            
+        </div>
+      </div>
+  </body>
+</html>

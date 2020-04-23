@@ -1,0 +1,48 @@
+/* Body is given a nice gradient to match comic books */
+body {
+    height: 100%;
+    background: white!important;
+    background-repeat: no-repeat;
+    font-style: san-serif;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(15, 11, 66);
+}
+
+
+hr {
+    background-color: grey;
+    height: 1px;
+}
+
+.footer-line {
+    background-color:red;
+    height: 1px;
+}
+img {
+    max-height: 180px;
+    max-width: 110px;
+}
+
+.price {
+    color: red;
+}
+
+.check-out {
+    background-color:rgb(247, 247, 230);
+    border: red 1px solid;
+    color: red;
+    font-weight: bold ;
+    text-decoration: none;
+}
+
+.check-out:hover {
+    text-decoration: none;
+    background-color: rgb(153, 150, 152);
+}
+
+.items {
+    margin-left: 20ox;
+}

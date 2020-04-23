@@ -1,0 +1,76 @@
+/* Body is given a nice gradient to match comic books */
+body {
+    height: 100%;
+    background: rgb(204, 175, 175)!important;
+    background-repeat: no-repeat;
+    font-style: san-serif;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(15, 11, 66);
+}
+
+hr {
+    background-color:grey;
+    height: 1px;
+}
+
+header {
+    background-color: lightgray;
+}
+
+label {
+    width: 75px;
+}
+
+.name-label {
+    width: 90px;
+}
+
+.credit-card-label {
+    width: 90px;
+}
+.label-ccv {
+    width: 180px;
+}
+.month-label {
+    width: 37px;
+}
+
+.year-label {
+    width: 24px;
+}
+
+@media (max-width: 575px) {
+    .label-ccv {
+        width: 180px;
+    }
+}
+
+@media (min-width: 576px) {
+    .label-ccv {
+        width:35px;
+    }
+
+}
+@media (min-width: 768px) {
+    .state-label {
+        width: 100px;
+    }
+    .address-label {
+        width: 65px;
+        }
+    label {
+        width: 35px;
+    }
+    .label-ccv {
+        width: 35px;
+    }     
+}
+
+@media (min-width: 992px) {
+    .name-label {
+        width: 50px;
+    }
+}

@@ -1,0 +1,99 @@
+
+
+body {
+    height: 100%;
+    background: white!important;
+    font-style: san-serif;
+    position: relative;
+}
+
+.background-img {
+    background-image:url("../images/community.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    z-index: 0;
+}
+
+.opening-p {
+    text-align: justify;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(15, 11, 66);
+}
+
+
+hr {
+    background-color: grey;
+    height: 1px;
+}
+
+.footer-line {
+    background-color:red;
+    height: 1px;
+}
+img {
+    max-height: 180px;
+    max-width: 150px;
+}
+
+.icons
+{
+    height: 20px;
+}
+
+/* Default XL Resolution */
+.community {
+    background: rgb(243, 243, 13);
+}
+
+.community-tiny {
+    display:none;
+    margin-top: 5000px;
+}
+
+/* Large Screen */
+@media (max-width: 1199px) {
+
+    .background-img {
+        background-size: cover;
+        height: 200px;
+    } 
+}
+
+/* Medium Resolution */
+@media (max-width: 991px) {
+
+    .background-img {
+        background-size: cover;
+        height: 150px;
+    }
+
+}
+/* Small Resolution */
+@media (max-width: 767px) {
+
+    .background-img {
+        background-size: cover;
+        height: 125px;
+    }
+
+}
+
+/* Extra Small Resolution */
+@media (max-width: 575px){
+    .background-img {
+        background-size: cover;
+        height: 125px;
+    }
+}
+
+@media (max-width: 400px){
+    .background-img {
+        background-size: cover;
+        height: 75px;
+    }
+}
+
